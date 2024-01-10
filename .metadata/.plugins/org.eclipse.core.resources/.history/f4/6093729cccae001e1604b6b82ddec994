@@ -1,0 +1,47 @@
+package com.restdemo.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.restdemo.entities.CloudVendor;
+import com.restdemo.repo.CloudVendorRepo;
+@Service
+public class CloudVendorServiceImpl implements CloudVendorService {
+	
+	CloudVendorRepo cloudVendorRepo;
+	
+	public CloudVendorServiceImpl(CloudVendorRepo cloudVendorRepo) {
+		super();
+		this.cloudVendorRepo = cloudVendorRepo;
+	}
+
+	@Override
+	public String createCloudVendor(CloudVendor cloudVendor) {
+		cloudVendorRepo.save(cloudVendor);
+		return "Success";
+	}
+
+	@Override
+	public String updateCloudVendor(CloudVendor cloudeVendor) {
+		cloudVendorRepo.save(cloudeVendor);
+		return "Success";
+	}
+
+	@Override
+	public String deleteCloudVendor(String cloudVendorId) {
+		cloudVendorRepo.deleteById(cloudVendorId);
+		return "Success";
+	}
+
+	@Override
+	public CloudVendor getCloudVendor(String cloudVendorId) {
+		return cloudVendorRepo.findById(cloudVendorId).get();//object will return
+	}
+
+	@Override
+	public List<CloudVendor> getAllCloudVendor() {
+		return cloudVendorRepo.findAll();
+	}
+
+}

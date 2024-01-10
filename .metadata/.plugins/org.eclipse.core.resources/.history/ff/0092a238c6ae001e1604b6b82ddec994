@@ -1,0 +1,39 @@
+package com.restdemo.service;
+
+import java.util.List;
+
+import com.restdemo.entities.CloudVendor;
+
+public class CloudVendorServiceImpl implements CloudeVendorService {
+
+	@Override
+	public String createCloudVendor(CloudVendor cloudVendor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateCloudVendor(CloudVendor cloudeVendor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteCloudVendor(String cloudVendorId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CloudVendor getCloudVendor(String cloudVendorId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<CloudVendor> getAllCloudVendor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

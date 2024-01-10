@@ -1,0 +1,5 @@
+package com.restdemo.entities;
+
+public class CloudVendor {
+
+}

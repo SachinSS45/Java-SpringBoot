@@ -1,0 +1,5 @@
+package com.restdemo.repo;
+
+public interface CloudVendorRepo {
+
+}

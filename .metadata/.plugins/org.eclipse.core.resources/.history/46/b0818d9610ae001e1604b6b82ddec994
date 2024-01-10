@@ -1,0 +1,23 @@
+package com.demo.services;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class CalculatorServiceTest {
+	
+	//test method of addTwoNumbers
+	
+	@Test
+	public void addTwoNumbersTest() {
+		int result = CalculatorService.addTwoNumbers(12, 45);
+		
+		int expected = 57;
+		Assert.assertEquals(expected, result);
+		
+		
+		//actual result
+		
+		//expected result (for checking expection we have one class Assert)
+	}
+}

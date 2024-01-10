@@ -1,0 +1,5 @@
+package com.restdemo.service;
+
+public class CloudeVendorService {
+
+}
