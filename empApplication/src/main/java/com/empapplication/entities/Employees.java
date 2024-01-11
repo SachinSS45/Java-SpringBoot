@@ -13,15 +13,15 @@ public class Employees {
 	private String grade;
 	private int joiningYear;
 	private String departement;
-//	public Employees(int empId, String empName, String email, String grade, int joiningYear, String departement) {
-//		super();
-//		this.empId = empId;
-//		this.empName = empName;
-//		this.email = email;
-//		this.grade = grade;
-//		this.joiningYear = joiningYear;
-//		this.departement = departement;
-//	}
+	public Employees(int empId, String empName, String email, String grade, int joiningYear, String departement) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.email = email;
+		this.grade = grade;
+		this.joiningYear = joiningYear;
+		this.departement = departement;
+	}
 	public int getEmpId() {
 		return empId;
 	}

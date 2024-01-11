@@ -13,7 +13,5 @@ public interface CloudVendorService {
 	
 	public String updateCloudVendor(CloudVendor cloudeVendor);
 	
-	public String deleteVendorById(int vendorId);
-	
-	
+	public String deleteVendorById(int vendorId);	
 }

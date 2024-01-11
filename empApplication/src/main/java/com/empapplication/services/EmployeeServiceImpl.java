@@ -14,12 +14,15 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	EmployeeRepo employeeRepo;
 	
+	public EmployeeServiceImpl(EmployeeRepo employeeRepo2) {
+		this.employeeRepo = employeeRepo2;
+	}
 	@Override
 	public List<Employees> getAllEmployees() {
 		// TODO Auto-generated method stub
 		return employeeRepo.findAll();
 	}
-	@SuppressWarnings("deprecation")
+//	
 	@Override
 	public Employees getEmpById(int empId) {
 		Employees entity1 =  employeeRepo.findByEmpId(empId);
@@ -30,6 +33,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		// TODO Auto-generated method stub
 		return employeeRepo.save(employees);
 	}
+	@SuppressWarnings("deprecation")
 	@Override
 	public void deleteEmpById(int empId) {
 		// TODO Auto-generated method stub

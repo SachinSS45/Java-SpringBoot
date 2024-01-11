@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.springrest.springrest.entities.Course"/>
-    <fullyQualifiedTypeName name="java.lang.Long"/>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.restapijpa.restapidatajpa.dao.CourseDao"/>
-    <fullyQualifiedTypeName name="com.restapijpa.restapidatajpa.services.CourseService"/>
-    <fullyQualifiedTypeName name="com.restapijpa.restapidatajpa.entities.Course"/>
     <fullyQualifiedTypeName name="com.springrest.springrest.services.CourseServiceImpl"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
@@ -26,13 +18,11 @@
     <fullyQualifiedTypeName name="org.junit.Before"/>
     <fullyQualifiedTypeName name="com.demo.services.CalculatorService"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Assertions"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="com.bootdemo.services.PersonService"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
     <fullyQualifiedTypeName name="com.bootdemo.entites.Person"/>
     <fullyQualifiedTypeName name="com.bootdemo.repo.PersonRepo"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="org.hibernate.bytecode.internal.bytebuddy.PrivateAccessorException"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.StaticApplicationContext"/>
     <fullyQualifiedTypeName name="org.assertj.core.api.Assertions"/>
@@ -51,13 +41,23 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
     <fullyQualifiedTypeName name="org.springframework.data.annotation.Id"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.restdemo.entities.CloudVendor"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="com.restdemo.exception.CloudVendorNotFoundException"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterEach"/>
+    <fullyQualifiedTypeName name="com.empapplication.repository.EmployeeRepo"/>
+    <fullyQualifiedTypeName name="com.empapplication.entities.Employees"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 </qualifiedTypeNameHistroy>

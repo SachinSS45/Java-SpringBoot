@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyControllerTest" project="empApplication" tests="5" started="5" failures="1" errors="0" ignored="0">
+  <testsuite name="com.empapplication.controller.MyControllerTest" time="0.468" displayname="MyControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]">
+    <testcase name="deleteEmpById" classname="com.empapplication.controller.MyControllerTest" time="0.197" displayname="deleteEmpById()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]/[method:deleteEmpById()]"/>
+    <testcase name="testGetEmpById" classname="com.empapplication.controller.MyControllerTest" time="0.125" displayname="testGetEmpById()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]/[method:testGetEmpById()]"/>
+    <testcase name="addEmployee" classname="com.empapplication.controller.MyControllerTest" time="0.08" displayname="addEmployee()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]/[method:addEmployee()]"/>
+    <testcase name="testGetAllEmployees" classname="com.empapplication.controller.MyControllerTest" time="0.021" displayname="testGetAllEmployees()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]/[method:testGetAllEmployees()]"/>
+    <testcase name="updateEmployee" classname="com.empapplication.controller.MyControllerTest" time="0.034" displayname="updateEmployee()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]/[method:updateEmployee()]">
+      <failure>java.lang.AssertionError: No value at JSON path "$.empId"&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)&#13;
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.empapplication.controller.MyControllerTest.updateEmployee(MyControllerTest.java:112)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty&#13;
+	at com.jayway.jsonpath.internal.Utils.notEmpty(Utils.java:401)&#13;
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:390)&#13;
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:377)&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:299)&#13;
+	... 7 more&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,88 @@
+package com.empapplication.services;
+
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import com.empapplication.entities.Employees;
+import com.empapplication.repository.EmployeeRepo;
+
+
+
+public class EmployeeServiceImplTest {
+	
+	@Mock
+	private EmployeeRepo employeeRepo;
+	
+	
+	EmployeeService employeeService;
+	AutoCloseable autoCloseable;//to close the unwanted resource after entire class finished
+	Employees employees;
+	
+	@BeforeEach
+	void setUp() {
+		autoCloseable = MockitoAnnotations.openMocks(this);//for this class  test class 
+		employeeService = new EmployeeServiceImpl(employeeRepo);
+		employees = new Employees(1,"Subramanyam Jadhav","subramnyam.jadhav@example.com","B",2024,"Trainee");
+	}
+	
+	@AfterEach
+	void tearDown()throws Exception {
+		autoCloseable.close();
+	}
+	
+	@Test
+	void testAddEmployee() {
+		when(employeeRepo.save(any())).thenReturn(employees);
+		
+		Employees addEmployees = employeeService.addEmployee(new Employees());
+		assertNotNull(addEmployees);
+		assertEquals(1, addEmployees.getEmpId());
+		
+		verify(employeeRepo,times(1)).save(any());
+	}
+	
+	@Test
+	void testGetAllEmployees() {
+		List<Employees> employeeList = new ArrayList<>();
+		employeeList.add(employees);
+		
+		when(employeeRepo.findAll()).thenReturn(employeeList);
+		
+		List<Employees> allEmployees = employeeService.getAllEmployees();
+		assertNotNull(allEmployees);
+		assertFalse(allEmployees.isEmpty());
+		assertEquals(1, allEmployees.size());
+		
+		verify(employeeRepo,times(1)).findAll();
+	}
+	@Test
+	void testGetEmpById() {
+		
+	}
+	
+	@Test
+	void testDeleteEmpById() {
+		
+	}
+	@Test
+	void testUpdateEmployee() {
+		
+	}
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MyControllerTest" project="empApplication" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.empapplication.controller.MyControllerTest" time="0.543" displayname="MyControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]">
+    <testcase name="testGetEmpById" classname="com.empapplication.controller.MyControllerTest" time="0.492" displayname="testGetEmpById()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]/[method:testGetEmpById()]"/>
+    <testcase name="testGetAllEmployees" classname="com.empapplication.controller.MyControllerTest" time="0.045" displayname="testGetAllEmployees()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.controller.MyControllerTest]/[method:testGetAllEmployees()]"/>
+  </testsuite>
+</testrun>

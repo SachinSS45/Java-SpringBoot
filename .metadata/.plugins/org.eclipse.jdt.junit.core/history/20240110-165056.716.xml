@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeServiceImplTest" project="empApplication" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.empapplication.services.EmployeeServiceImplTest" time="1.238" displayname="EmployeeServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.services.EmployeeServiceImplTest]">
+    <testcase name="testGetEmpById" classname="com.empapplication.services.EmployeeServiceImplTest" time="1.149" displayname="testGetEmpById()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.services.EmployeeServiceImplTest]/[method:testGetEmpById()]"/>
+    <testcase name="testAddEmployee" classname="com.empapplication.services.EmployeeServiceImplTest" time="0.072" displayname="testAddEmployee()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.services.EmployeeServiceImplTest]/[method:testAddEmployee()]"/>
+    <testcase name="testDeleteEmpById" classname="com.empapplication.services.EmployeeServiceImplTest" time="0.004" displayname="testDeleteEmpById()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.services.EmployeeServiceImplTest]/[method:testDeleteEmpById()]"/>
+    <testcase name="testUpdateEmployee" classname="com.empapplication.services.EmployeeServiceImplTest" time="0.004" displayname="testUpdateEmployee()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.services.EmployeeServiceImplTest]/[method:testUpdateEmployee()]"/>
+    <testcase name="testGetAllEmployees" classname="com.empapplication.services.EmployeeServiceImplTest" time="0.003" displayname="testGetAllEmployees()" uniqueid="[engine:junit-jupiter]/[class:com.empapplication.services.EmployeeServiceImplTest]/[method:testGetAllEmployees()]"/>
+  </testsuite>
+</testrun>
